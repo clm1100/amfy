@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .out{width:42px;height:460px;position:relative;overflow: hidden}
+        .gj{background:url("img/gj.png") no-repeat center top;width:42px;height:460px;
+        position:absolute;left:0;top:400px;transition: all .3s;}
+        .gj.top{top:0}
+    </style>
+</head>
+<body>
+<div>
+    <div class="out">
+        <div class="gj"></div>
+    </div>
+</div>
+<script>
+    document.getElementsByClassName("gj")[0].onclick = function(){
+        this.className = "gj top";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% block content%}
+<h1>{{cc}}</h1>
+
+<table id="example_lottery" class="table table-bordered table-striped" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>账号</th>
+    </tr>
+    </thead>
+
+    <tfoot>
+    <tr>
+        <th>姓名</th>
+        <th>账号</th>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    {% for r in item %}
+    <tr>
+        <td>{{r.name}}</td>
+        <td>{{r.pass}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock%}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <title>{% block title %}My Site{% endblock %}</title>
+    <style>
+        *{margin: 0}
+        .img{width:80%;border-radius: 15px;border: 2px solid #04BE02;margin: 0 auto;overflow: hidden;background:#04BE02;
+        margin-bottom:20px;}
+        .img img{width:100%;display: block}
+        .weui_cells:after{border:none}
+    </style>
+
+    {% block head %}
+    {% include "head.html" %}
+    {% endblock %}
+</head>
+<body>
+{% block content %}{% endblock %}
+{% include "footer.html" %}
+{% block script %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <title id="title"></title>
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <link rel="stylesheet" href="style/animate.css"/>
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .header{height:8%;}
+        .img{height:55%;position: relative;text-align: center;opacity: 0}
+        .img img{width:95%;position: absolute;left:50%;top:50%;transform:translate3d(-50%,-50%,0);-webkit-transform:translate3d(-50%,-50%,0);  }
+        .text{height:20%;background:url("img2/1_04.png") no-repeat center center;background-size: 90%;font-family: "微软雅黑";
+            box-sizing:border-box;
+            -moz-box-sizing:border-box; /* Firefox */
+            -webkit-box-sizing:border-box; /* Safari */
+            opacity: 0;
+        }
+        .footer{height:12%;}
+        .bg1{background: url("img2/bg.jpg") no-repeat center top;background-size: 100%}
+        .bg2{background: url("img2/bg.jpg") no-repeat center bottom}
+        .text .zhanwei{height:15%}
+        .text .text1{height:25%;text-align: center;color:#fff}
+        .text .text2{height:30%;text-align: center;color:#f0ff00;font-weight: bold;font-size: 24px}
+        .text .text3{height:20%;text-align: center;color:#fff;font-size: 12px}
+        .footer .left,.footer .right{display: inline-block;width:49%;height: 100%;-webkit-box-sizing: border-box;box-sizing: border-box;padding: 10px;overflow: hidden}
+        .footer .left{background: url("img2/1_06.png") no-repeat right center;background-size: 100%}
+        .footer .right{background: url("img2/1_07.png") no-repeat left center;background-size: 100%}
+        .icon{height:5%;}
+        .up{background: url("img2/up.png") no-repeat center center;background-size: 100%;width:25px;height:13px;margin:0 auto;
+            -webkit-animation: up 1.5s infinite ease-in-out;}
+        @-webkit-keyframes up {
+            0%,30% { opacity:0; -webkit-transform:translate(0,10px); }
+            60% { opacity:1; -webkit-transform:translate(0,0); }
+            100% { opacity:0; -webkit-transform:translate(0,-8px); }
+        }
+        .banner{height:10%;background:url("img2/1_09.png") no-repeat center center;background-size: 100%;}
+        .product{height:65%;position: relative}
+        .product_nei{width:100%;overflow:hidden;position: absolute;top:50%;left:50%;transform: translate3d(-50%,-50%,0);-webkit-transform: translate3d(-50%,-50%,0)}
+        .anniu{height:25%;background:url("img/btn.gif") no-repeat center center;background-size: 100% auto}
+        .common{width: 49%;padding-bottom: 50%;background:#f45;display: inline-block}
+        .common a{display: block;width:100%;height:100%;position: absolute;}
+        .product1{background: url("img2/1_11.png") no-repeat center top;background-size: auto 100%}
+        .product2{background: url("img2/1_12.png") no-repeat center top;background-size: auto 100%}
+        .product3{background: url("img2/1_13.png") no-repeat center top;background-size: auto 100%}
+        .product4{background: url("img2/1_14.png") no-repeat center top;background-size: auto 100%}
+        .anniu2{width:60%;height:100%;display: inline-block}
+        .float{float: right}
+        .tiaozhuan{float:left}
+        .zhezhao{position: absolute;top:0;left:0;width: 100%;height:100%;background:url("img/zhezhao.png") center center;z-index: 9;
+            background-size: cover;display: none;}
+        .anniu a{display: block;width:100%;height:100%}
+
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide bg1">
+            <div class="header"></div>
+            <div class="img">
+                <img id="oimg" src="img2/bfb.png" alt=""/>
+            </div>
+            <div class="text">
+                <div class="zhanwei"></div>
+                <div class="text1"><span id="name">小白菜</span>在星球大战里是:</div>
+                <div class="text2">风暴兵</div>
+                <div class="text3">银河系中最卓越的赏金猎人</div>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <a class="float anniu2" href="###"></a>
+                </div>
+                <div class="right">
+                    <a class="tiaozhuan anniu2" href="index.html"></a>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="up"></div>
+            </div>
+        </div>
+        <div class="swiper-slide bg2">
+            <div class="banner"></div>
+            <div class="product">
+                <div class="product_nei">
+                    <div class="product1 common">
+                        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.moretao"></a>
+                    </div>
+                    <div class="product2 common">
+                        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.moretao"></a>
+                    </div>
+                    <div class="product3 common">
+                        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.moretao"></a>
+                    </div>
+                    <div class="product4 common">
+                        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.moretao"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="anniu">
+                <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.moretao"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zhezhao">
+
+</div>
+<script src="style/zepto.js"></script>
+<script src="style/event.js"></script>
+<script src="style/touch.js"></script>
+<script src="style/swiper.min.js"></script>
+<script>
+    var imgurl = {
+        A:{
+            url:"imgs/1.png",
+            mz:"达斯维达",
+            text:"拥有强大原力的西斯黑暗尊主"
+        },
+        B:{
+            url:"imgs/2.png",
+            mz:"卢克",
+            text:"最强大的绝地武士"
+        },
+        C:{
+            url:"imgs/3.png",
+            mz:"尤达大师",
+            text:"传奇绝地大师"
+        },
+        D:{
+            url:"imgs/4.png",
+            mz:"汉·索罗",
+            text:'"千年隼号"的传奇船长'
+        },
+        E:{
+            url:"imgs/5.png",
+            mz:"莱娅公主",
+            text:"美丽勇敢的义军同盟领袖"
+        },
+        F:{
+            url:"imgs/6.png",
+            mz:"波巴·费特",
+            text:"银河系中最卓越的赏金猎人"
+        },
+        G:{
+            url:"imgs/7.png",
+            mz:"暴风兵",
+            text:"银河帝国精锐的突击部队"
+        },
+        H:{
+            url:"imgs/8.png",
+            mz:"欧比旺",
+            text:"一生富于传奇色彩的绝地武士"
+        },
+        I:{
+            url:"imgs/9.png",
+            mz:"C-3PO",
+            text:"多愁善感的逗比机器人"
+        },
+        J:{
+            url:"imgs/10.png",
+            mz:"R2-D2 ",
+            text:"机智勇敢的宇航机器人"
+        },
+        K:{
+            url:"imgs/11.png",
+            mz:"蕾伊",
+            text:"身世神秘的年轻绝地武士"
+        },
+        L:{
+            url:"imgs/12.png",
+            mz:"凯洛伦",
+            text:"堕入原力黑暗面的伦武士"
+        },
+        M:{
+            url:"imgs/1.png",
+            mz:"达斯维达",
+            text:"拥有强大原力的西斯黑暗尊主"
+        },
+        N:{
+            url:"imgs/2.png",
+            mz:"卢克",
+            text:"最强大的绝地武士"
+        },
+        O:{
+            url:"imgs/9.png",
+            mz:"C-3PO",
+            text:"多愁善感的逗比机器人"
+        },
+        P:{
+            url:"imgs/4.png",
+            mz:"汉·索罗",
+            text:'"千年隼号"的传奇船长'
+        },
+        Q:{
+            url:"imgs/5.png",
+            mz:"莱娅公主",
+            text:"美丽勇敢的义军同盟领袖"
+        },
+        R:{
+            url:"imgs/6.png",
+            mz:"波巴·费特",
+            text:"银河系中最卓越的赏金猎人"
+        },
+        S:{
+            url:"imgs/7.png",
+            mz:"暴风兵",
+            text:"银河帝国精锐的突击部队"
+        },
+        T:{
+            url:"imgs/8.png",
+            mz:"欧比旺",
+            text:"一生富于传奇色彩的绝地武士"
+        },
+        U:{
+            url:"imgs/9.png",
+            mz:"C-3PO",
+            text:"多愁善感的逗比机器人"
+        },
+        V:{
+            url:"imgs/10.png",
+            mz:"R2-D2 ",
+            text:"机智勇敢的宇航机器人"
+        },
+        W:{
+            url:"imgs/11.png",
+            mz:"蕾伊",
+            text:"身世神秘的年轻绝地武士"
+        },
+        X:{
+            url:"imgs/12.png",
+            mz:"凯洛伦",
+            text:"堕入原力黑暗面的伦武士"
+        },
+        Y:{
+            url:"imgs/11.png",
+            mz:"蕾伊",
+            text:"身世神秘的年轻绝地武士"
+        },
+        Z:{
+            url:"imgs/12.png",
+            mz:"凯洛伦",
+            text:"堕入原力黑暗面的伦武士"
+        }
+
+    };
+    var data = window.location.search;
+    var datastr = data.substring(data.indexOf("data=")+5,data.indexOf("+++"));
+    var json = JSON.parse(decodeURI(datastr));
+    //    接受数据;
+    var Oname = json.name;
+    var Ourl = imgurl[json.zhuan].url;
+    var Omz = imgurl[json.zhuan].mz;
+    var Otext = imgurl[json.zhuan].text;
+
+    var swiper = new Swiper('.swiper-container', {
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+
+    $(function(){
+        $(".img").one('webkitAnimationEnd  animationend', function() {
+            $(".text").css({"opacity":"1"}).addClass("animated zoomIn")
+        });
+        $("#name").html(Oname);
+        $(".text2").html(Omz);
+        $(".text3").html(Otext);
+        $("#title").html(Oname+"在星球大战中是"+Omz);
+
+        $(".float").tap(function(){
+            $(".zhezhao").show();
+        });
+        $(".zhezhao").tap(function(){
+            $(".zhezhao").hide();
+        })
+        var Oimg = new Image();
+        Oimg.src = Ourl;
+        $(Oimg).load(function(){
+            $("#oimg").attr({"src":Ourl})
+            $(".img").css({"opacity":1}).addClass("animated slideInDown");
+        });
+
+    })
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?f4651fa752d7aeceef4850788adb55e4";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="name"/>
+<script src="http://libs.useso.com/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="pinyin.js"></script>
+<script type="text/javascript">
+    function validate(){
+//        /[\u4E00-\u9FA5]{2,7}/g
+//        \u4e00-\u9fa5]/g
+//        var reg = new RegExp("^([\u4E00-\uFA29]|[\uE7C7-\uE7F3]|[a-zA-Z0-9_]){1,10}$");
+        var obj = document.getElementById("name").value;
+//        alert(reg.test(obj.value));
+      var ccc =  obj.replace(/[^\u4e00-\u9fa5]/gi,"");
+        var bbb = pinyin.getCamelChars(ccc);
+        alert(bbb);
+
+    }
+    document.getElementById("name").onblur = function(){
+        validate();
+    }
+</script>
+<!--<script type="text/javascript">-->
+    <!--var str="怎样从一个Html页面中提取所有汉字呢？不能有其它Html代码。";-->
+    <!--alert(str.replace(/[^\u4e00-\u9fa5]/gi,""));-->
+<!--</script>-->
+</body>
+</html>

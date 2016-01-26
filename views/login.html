@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block head %}
+{% parent %}
+{% endblock %}
+
+{% block content %}
+{% if user %}
+<h1>已经注册并且是登录状态</h1>
+{% endif %}
+<form action="/login/{{item.id}}" id="form" method="post">
+    <div>
+        <lable>姓名
+            <input type="text" name="name" value="{{item.name}}"/>
+        </lable>
+    </div>
+    <div>
+        <lable>密码
+            <input type="text" name="pass" value="{{item.pass}}"/>
+        </lable>
+    </div>
+    <div>
+        <lable><input type="submit"/></lable>
+    </div>
+</form>
+{% endblock %}
+{% block script%}
+{% if aaa %}
+<h1>11111</h1>
+{% else %}
+<h2>222222</h2>
+{% endif %}
+<script>
+
+</script>
+{% endblock%}

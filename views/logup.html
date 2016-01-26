@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ cc }}{% endblock %}
+
+{% block head %}
+{% parent %}
+{% endblock %}
+
+{% block content %}
+{% if user %}
+<h1>您已经登录</h1>
+{% else %}
+<form action="/logup" id="form" method="post">
+    <div>
+        <lable>姓名
+            <input type="text" name="name" value="{{item.name}}"/>
+        </lable>
+    </div>
+    <div>
+        <lable>密码
+            <input type="text" name="pass" value="{{item.pass}}"/>
+        </lable>
+    </div>
+    <div>
+        <lable><input type="submit"/></lable>
+    </div>
+</form>
+{% endif %}
+
+{% endblock %}
+{% block script%}
+<script>
+
+</script>
+{% endblock%}

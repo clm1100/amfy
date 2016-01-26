@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <title id="title">测测你在星战中是谁?</title>
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .header{height:8%;}
+        .img{height:55%;position: relative;text-align: center;}
+        .img img{width:95%;position: absolute;left:50%;top:50%;transform:translate3d(-50%,-50%,0);-webkit-transform:translate3d(-50%,-50%,0)  }
+        .text{height:20%;background:url("img2/1_04.png") no-repeat center center;background-size: 90%;font-family: "微软雅黑";
+            box-sizing:border-box;
+            -moz-box-sizing:border-box; /* Firefox */
+            -webkit-box-sizing:border-box; /* Safari */
+        }
+        .footer{height:12%;}
+        .bg1{background: url("img2/bg.jpg") no-repeat center top;background-size: 100%}
+        .bg2{background: url("img2/bg.jpg") no-repeat center bottom}
+        .text .zhanwei{height:15%}
+        .text .text1{height:25%;text-align: center;color:#fff}
+        .text .text2{height:30%;text-align: center;color:#f0ff00;font-weight: bold;font-size: 20px}
+        .text .text3{height:20%;text-align: center;color:#fff;font-size: 12px}
+        .footer .left,.footer .right{display: inline-block;width:49%;height: 100%}
+        .footer .left{background: url("img2/1_06.png") no-repeat right center;background-size: 100%}
+        .footer .right{background: url("img2/1_07.png") no-repeat left center;background-size: 100%}
+        .icon{height:5%;}
+        .up{background: url("img2/up.png") no-repeat center center;background-size: 100%;width:25px;height:13px;margin:0 auto;
+            -webkit-animation: up 1.5s infinite ease-in-out;}
+        @-webkit-keyframes up {
+            0%,30% { opacity:0; -webkit-transform:translate(0,10px); }
+            60% { opacity:1; -webkit-transform:translate(0,0); }
+            100% { opacity:0; -webkit-transform:translate(0,-8px); }
+        }
+        .banner{height:10%;background:#ff0 url("img2/1_09.png") no-repeat center center;background-size: 100%;}
+        .product{background:#fff;height:70%;position: relative}
+        .product_nei{width:100%;overflow:hidden;position: absolute;top:50%;left:50%;transform: translate3d(-50%,-50%,0);-webkit-transform: translate3d(-50%,-50%,0)}
+        .anniu{height:20%;background:#f0f;}
+        .common{width: 49%;padding-bottom: 50%;background:#f45;display: inline-block}
+        .common a{display: block;width:100%;height:100%}
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide bg1">
+            <div class="header"></div>
+            <div class="img">
+                <img id="oimg" src="img2/bfb.png" alt=""/>
+            </div>
+            <div class="text">
+                <div class="zhanwei"></div>
+                <div class="text1"><span id="name">小白菜</span>在星球大战里是:</div>
+                <div class="text2">风暴兵</div>
+                <div class="text3">银河系中最卓越的赏金猎人</div>
+            </div>
+            <div class="footer">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="icon">
+                <div class="up"></div>
+            </div>
+        </div>
+        <div class="swiper-slide bg2">
+            <div class="banner"></div>
+            <div class="product">
+                <div class="product_nei">
+                    <div class="product1 common">
+                        <a href="###"></a>
+                    </div>
+                    <div class="product2 common">
+                        <a href="###"></a>
+                    </div>
+                    <div class="product3 common">
+                        <a href="###"></a>
+                    </div>
+                    <div class="product4 common">
+                        <a href="###"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="anniu"></div>
+        </div>
+    </div>
+</div>
+<script src="style/zepto.js"></script>
+<script src="style/event.js"></script>
+<script src="style/touch.js"></script>
+<script src="style/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+//        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+</script>
+<script>
+//    var imgurl = {
+//        A:"你好"
+//    };
+//    var xingming = {
+//        A:"黑巫术"
+//    };
+//    $(function(){
+//        var data = window.location.search;
+//        var datastr = data.substring(data.indexOf("data=")+5,data.indexOf("+++"));
+//        var json = JSON.parse(decodeURI(datastr));
+//        console.log(json);
+//        console.log(imgurl[json.zhuan]+"----"+xingming[json.zhuan]);
+//    })
+</script>
+</body>
+</html>
